@@ -1,6 +1,6 @@
 <?php
 
-function isPath(string $route): bool
+function isPath(string $route, &$params = []): bool
 {
     $path = $_SERVER["REQUEST_URI"];
     $pathSeparatorPattern = "#/#";
@@ -12,10 +12,14 @@ function isPath(string $route): bool
         return false;
     }
 
+    $params = []; // Clear any previous parameters.
+
     foreach ($routeParts as $routePartIndex => $routePart) {
         $pathPart = $pathParts[$routePartIndex];
 
         if (str_starts_with($routePart, ":")) {
+            $paramName = ltrim($routePart, ":");
+            $params[$paramName] = $pathPart; // Extract the parameter value.
             continue;
         }
 
