@@ -11,7 +11,7 @@ function jsonResponse($statusCode, $headers, $body)
     }
 
     header("Content-Type: application/json");
-    header("X-ESGI : 2ESGI")
+    header("X-ESGI : 2ESGI");
 
     // On renvoie une réponse (contenu)
     return json_encode($body);
