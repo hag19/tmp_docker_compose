@@ -9,8 +9,7 @@ This repository provides ready-to-use `docker-compose` templates for deploying v
 ### 1. Download the Repository
 Clone or download the specific files you need using the following command:
 ```bash
-curl -LO https://raw.githubusercontent.com/your-username/your-repo/main/docker-compose.yml
-Replace your-username/your-repo and docker-compose.yml with the appropriate path and filename.
+curl -LO https://github.com/hag19/tmp_docker_compose/replace_with_chosen_template/docker-compose.yml
 ### 2. Create a .env File
 Most templates require a .env file for configuration. You can create one with the following command:
 
