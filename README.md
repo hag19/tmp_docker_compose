@@ -14,7 +14,6 @@ curl -LO https://github.com/hag19/tmp_docker_compose/replace_with_chosen_templat
 ---
 ### 2. Create a .env File
 Most templates require a .env file for configuration. You can create one with the following command:
----
 ```bash
 touch .env
 ```
@@ -27,18 +26,24 @@ For Debian/Ubuntu:
 ```bash
 sudo apt update
 sudo apt install docker.io docker-compose -y
-For other operating systems:
 ```
+For other operating systems:
+
 Visit Docker's official installation guide.
 Visit Docker Compose installation guide.
+---
 ### 4. Run the Application
 Start the application using the following command:
-
+```bash
 docker-compose up -d
+```
+---
 ### 5. Verify the Setup
 Check the running containers to ensure everything is working:
-
+```bash
 docker ps
+```
+---
 Contributing
 
 ### Feel free to submit pull requests or open issues for suggestions and improvements.
